@@ -1,17 +1,30 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react"
+import ReactDOM from "react-dom"
+import Footer from "./components/footer";
+import Header from "./components/header"
+import Main from "./components/main";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+  <div>
+    <Header />
+    <Main />
+    <Footer />
+  </div>
+  , document.getElementById("root"))
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const todu = (
+  <div>
+    <div>
+      <h2>My To Do List</h2>
+      <span >Add</span>
+    </div>
+    <ul >
+      <li>Hit the gym</li>
+      <li>Pay bills</li>
+      <li>Meet George</li>
+      <li>Buy eggs</li>
+      <li>Read a book</li>
+      <li>Organize office</li>
+    </ul>
+  </div>
+  )
