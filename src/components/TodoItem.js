@@ -8,6 +8,9 @@ class TodoItem extends Component {
             <li className={className}>
                 <span onClick={this.props.changeImportant} className={spanClassName} >{this.props.children}</span>
                 <button onClick={this.onClickDone} className="btn btn-success">Done</button>
+                <button onClick={this.props.deleteItem} className="btn btn-danger" >
+                    <i className="fa fa-trash"></i>
+                    </button>
             </li>
         );
     }
